@@ -1,0 +1,1582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Namana Shankar - Software Engineer specializing in Data Science, Full-Stack Development, and Problem Solving.">
+  <meta name="author" content="Namana Shankar">
+  <meta name="theme-color" content="#6366f1">
+
+  <!-- Open Graph / Social Sharing Meta Tags (for deployment SEO) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Namana Shankar | Software Engineer Portfolio">
+  <meta property="og:description" content="Software Engineer specializing in Data Science, IoT, and Full-Stack Development.">
+  <meta property="og:url" content="https://Namana-code.github.io/">
+  <meta property="og:image" content="pixel-avatar.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Namana Shankar | Software Engineer Portfolio">
+  <meta name="twitter:description" content="Software Engineer specializing in Data Science, IoT, and Full-Stack Development.">
+
+  <!-- Canonical URL (important for deployment — update to your final URL) -->
+  <link rel="canonical" href="https://Namana-code.github.io/">
+
+  <title>Namana Shankar | Software Engineer Portfolio</title>
+  
+  <!-- Pixel Art & Modern Typography (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&family=VT323&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========================================================= -->
+  <!-- MOBILE TOP BAR (VISIBLE ON SCREENS <= 1024px)              -->
+  <!-- ========================================================= -->
+  <header class="mobile-header" id="mobile-header" aria-label="Mobile Navigation Bar">
+    <div class="mobile-header-container">
+      <a href="#hero" class="mobile-logo" aria-label="Home">
+        <span class="logo-bracket">&lt;</span>Namana<span class="logo-accent">.Dev</span><span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <div class="mobile-header-actions">
+        <!-- Night mode toggle in mobile header -->
+        <button id="theme-toggle" class="theme-toggle-btn mobile-theme-btn" aria-label="Toggle night mode" title="Toggle night mode">
+          <span class="theme-toggle-indicator">
+            <span class="theme-icon light-icon" aria-hidden="true">&#9788;</span>
+            <span class="theme-icon dark-icon" aria-hidden="true">&#9790;</span>
+          </span>
+          <span class="theme-label-text">MODE</span>
+        </button>
+
+        <!-- Sidebar open/close button -->
+        <button id="sidebar-toggle-btn" class="sidebar-toggle-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="sidebar">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================= -->
+  <!-- VERTICAL PIXEL ART NAVIGATION BAR (LEFT SIDE)             -->
+  <!-- ========================================================= -->
+  <aside class="pixel-sidebar" id="sidebar" aria-label="Main Navigation">
+    <div class="sidebar-inner">
+
+      <!-- Sidebar Player Profile Header -->
+      <div class="sidebar-header">
+        <div class="sidebar-avatar-wrap">
+          <div class="sidebar-avatar-frame">
+            <img src="WhatsApp Image 2026-10-07 at 9.49.09 AM.jpeg" alt="Namana Shankar" class="sidebar-avatar-img">
+            <span class="corner-stud top-left"></span>
+            <span class="corner-stud top-right"></span>
+            <span class="corner-stud bottom-left"></span>
+            <span class="corner-stud bottom-right"></span>
+          </div>
+          <span class="sidebar-status-pip" aria-hidden="true"></span>
+        </div>
+        <div class="sidebar-title-group">
+          <a href="#hero" class="sidebar-logo">
+            <span class="logo-bracket">&lt;</span>Namana<span class="logo-accent">.Dev</span><span class="logo-bracket">/&gt;</span>
+          </a>
+          <div class="sidebar-subtitle">
+            <span class="pixel-dot-pulse" aria-hidden="true"></span>
+            <span class="rank-text">LVL 1 &bull; SE ENG</span>
+          </div>
+        </div>
+
+        <!-- Mobile close button inside drawer -->
+        <button id="sidebar-close-btn" class="sidebar-close-btn" aria-label="Close navigation menu">
+          &#10005;
+        </button>
+      </div>
+
+      <!-- Navigation Links Menu (Pixel Art Styled) -->
+      <nav class="sidebar-nav" aria-label="Sidebar Sections">
+        <ul class="sidebar-menu-list" role="list">
+          <li class="sidebar-menu-item">
+            <a href="#hero" class="sidebar-link active" data-section="hero" aria-current="page">
+              <span class="pixel-link-icon" aria-hidden="true">&#9670;</span>
+              <span class="link-text">Home</span>
+              <span class="pixel-arrow" aria-hidden="true">&#9658;</span>
+            </a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="#about" class="sidebar-link" data-section="about">
+              <span class="pixel-link-icon" aria-hidden="true">&#9829;</span>
+              <span class="link-text">About Me</span>
+              <span class="pixel-arrow" aria-hidden="true">&#9658;</span>
+            </a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="#skills" class="sidebar-link" data-section="skills">
+              <span class="pixel-link-icon" aria-hidden="true">&#9889;</span>
+              <span class="link-text">Skills</span>
+              <span class="pixel-arrow" aria-hidden="true">&#9658;</span>
+            </a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="#timeline" class="sidebar-link" data-section="timeline">
+              <span class="pixel-link-icon" aria-hidden="true">&#9203;</span>
+              <span class="link-text">Timeline</span>
+              <span class="pixel-arrow" aria-hidden="true">&#9658;</span>
+            </a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="#projects" class="sidebar-link" data-section="projects">
+              <span class="pixel-link-icon" aria-hidden="true">&#9876;</span>
+              <span class="link-text">Projects</span>
+              <span class="pixel-arrow" aria-hidden="true">&#9658;</span>
+            </a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="#video-showcase" class="sidebar-link" data-section="video-showcase">
+              <span class="pixel-link-icon" aria-hidden="true">&#127916;</span>
+              <span class="link-text">Reel</span>
+              <span class="pixel-arrow" aria-hidden="true">&#9658;</span>
+            </a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="#testimonials" class="sidebar-link" data-section="testimonials">
+              <span class="pixel-link-icon" aria-hidden="true">&#9733;</span>
+              <span class="link-text">Testimonials</span>
+              <span class="pixel-arrow" aria-hidden="true">&#9658;</span>
+            </a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="#chat" class="sidebar-link" data-section="chat">
+              <span class="pixel-link-icon" aria-hidden="true">&#128172;</span>
+              <span class="link-text">Chat</span>
+              <span class="pixel-arrow" aria-hidden="true">&#9658;</span>
+            </a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="#contact" class="sidebar-link" data-section="contact">
+              <span class="pixel-link-icon" aria-hidden="true">&#9993;</span>
+              <span class="link-text">Contact</span>
+              <span class="pixel-arrow" aria-hidden="true">&#9658;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Sidebar Footer with Night Mode & Game Status -->
+      <div class="sidebar-footer">
+        <!-- Integrated Night Mode Toggle Button -->
+        <button id="theme-toggle-sidebar" class="theme-toggle-btn sidebar-theme-btn" aria-label="Toggle night mode" title="Toggle night mode">
+          <span class="theme-toggle-indicator">
+            <span class="theme-icon light-icon" aria-hidden="true">&#9788;</span>
+            <span class="theme-icon dark-icon" aria-hidden="true">&#9790;</span>
+          </span>
+          <span class="theme-label-text" id="theme-status-text">THEME</span>
+        </button>
+
+        <div class="sidebar-status-box">
+          <span class="stat-dot">&#9679;</span>
+          <span class="stat-text">READY FOR QUESTS</span>
+        </div>
+      </div>
+
+    </div>
+  </aside>
+
+  <!-- Mobile Backdrop Overlay -->
+  <div class="sidebar-backdrop" id="sidebar-backdrop" aria-hidden="true"></div>
+
+  <!-- ========================================================= -->
+  <!-- MAIN CONTENT CONTAINER                                    -->
+  <!-- ========================================================= -->
+  <main id="main-content">
+
+    <!-- ======================================================= -->
+    <!-- SECTION 1: HERO (PIXEL ART STYLE & PROVIDED BACKGROUND) -->
+    <!-- ======================================================= -->
+    <section id="hero" class="section hero-section" aria-labelledby="hero-title">
+      <div class="container hero-container">
+        
+        <!-- Hero Text & Welcoming Message -->
+        <div class="hero-content">
+          <div class="hero-badge-wrap">
+            <span class="pixel-badge"><span class="pixel-dot-pulse" aria-hidden="true"></span> LEVEL 1 &bull; READY</span>
+            <span class="pixel-badge accent-badge">OPEN TO WORK</span>
+          </div>
+
+          <h1 id="hero-title" class="hero-title">
+            WELCOME, VISITOR!
+            <span class="pixel-gradient-text">I'M NAMANA SHANKAR</span>
+          </h1>
+
+          <p class="hero-tagline">
+            SOFTWARE ENGINEER &bull; CSE (DATA SCIENCE) &bull; PROBLEM SOLVER
+          </p>
+
+          <!-- Retro RPG Dialogue Box -->
+          <div class="pixel-dialogue-box">
+            <div class="dialogue-header">
+              <span class="dialogue-speaker">NPC / DEV TRANSMISSION</span>
+              <span class="dialogue-code">[LOG_001.SYS]</span>
+            </div>
+            <p class="dialogue-text">
+              "Building resilient software, performant web applications, and data-driven systems. Press start below to explore my quests and projects!"
+              <span class="pixel-cursor" aria-hidden="true">&#9646;</span>
+            </p>
+          </div>
+          
+          <!-- Pixel Art Call-to-Action Buttons -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn-pixel btn-pixel-primary">
+              <span class="pixel-btn-icon">&#9658;</span> VIEW PROJECTS
+            </a>
+            <a href="#contact" class="btn-pixel btn-pixel-secondary">
+              <span class="pixel-btn-icon">&#9733;</span> GET IN TOUCH
+            </a>
+            <a href="DOC-20261005-WA0073.pdf" target="_blank" rel="noopener noreferrer" class="btn-pixel btn-pixel-outline">
+              <span class="pixel-btn-icon">&#10515;</span> RESUME (PDF)
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Pixel Arcade Character Card -->
+        <div class="hero-media">
+          <div class="pixel-arcade-card">
+            <!-- Retro Titlebar -->
+            <div class="arcade-titlebar">
+              <span class="arcade-title">
+                <span style="color: var(--accent-rose);">&#9829;</span> HERO_PROFILE.EXE
+              </span>
+              <div class="arcade-window-controls">
+                <span class="pixel-control-box min"></span>
+                <span class="pixel-control-box close"></span>
+              </div>
+            </div>
+
+            <!-- Avatar Frame with Provided Image -->
+            <div class="pixel-avatar-container">
+              <div class="avatar-pixel-frame">
+                <img src="WhatsApp Image 2026-10-07 at 9.49.09 AM.jpeg" alt="Namana Shankar - Software Engineer" class="pixel-avatar-img">
+                <div class="avatar-scanlines" aria-hidden="true"></div>
+                <span class="corner-stud top-left"></span>
+                <span class="corner-stud top-right"></span>
+                <span class="corner-stud bottom-left"></span>
+                <span class="corner-stud bottom-right"></span>
+                <div class="avatar-live-tag">
+                  <span class="pixel-dot-pulse"></span> ONLINE
+                </div>
+              </div>
+            </div>
+
+            <!-- Character RPG Stats -->
+            <div class="character-stats">
+              <div class="stat-item">
+                <span class="stat-label">HP</span>
+                <div class="stat-meter">
+                  <div class="stat-meter-fill hp"></div>
+                </div>
+                <span class="stat-value">100/100</span>
+              </div>
+
+              <div class="stat-item">
+                <span class="stat-label">MP</span>
+                <div class="stat-meter">
+                  <div class="stat-meter-fill mana"></div>
+                </div>
+                <span class="stat-value">100/100</span>
+              </div>
+
+              <div class="stat-item">
+                <span class="stat-label">EXP</span>
+                <div class="stat-meter">
+                  <div class="stat-meter-fill exp"></div>
+                </div>
+                <span class="stat-value">LEVEL 1</span>
+              </div>
+
+              <!-- Key Skills Pills -->
+              <div class="skill-chips-row">
+                <span class="pixel-chip">Python</span>
+                <span class="pixel-chip">Java</span>
+                <span class="pixel-chip">C</span>
+                <span class="pixel-chip">HTML/CSS</span>
+                <span class="pixel-chip">Data Science</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- SECTION 2: ABOUT ME                                     -->
+    <!-- Clean, Minimalistic Design with Pixel-Art Profile Card  -->
+    <!-- ======================================================= -->
+    <section id="about" class="section about-section" aria-labelledby="about-title">
+      <div class="container">
+        
+        <header class="section-header">
+          <span class="section-eyebrow">01. Identity &amp; Journey</span>
+          <h2 id="about-title" class="section-title">About Me</h2>
+        </header>
+
+        <div class="about-grid">
+          
+          <!-- Column 1: Minimalist Profile & Avatar Card -->
+          <div class="about-card-col">
+            <div class="pixel-about-card">
+              
+              <!-- Avatar Frame with Interactive Switch -->
+              <div class="about-avatar-wrapper">
+                <div class="avatar-interactive-frame">
+                  <!-- Pixel Art Avatar (Default) -->
+                  <img src="pixel-avatar.jpg" alt="Namana Shankar - Pixel Art Avatar" class="about-avatar-img avatar-pixel active" id="avatar-pixel-view">
+                  <!-- Real Photo (Alternative) -->
+                  <img src="WhatsApp Image 2026-10-07 at 9.49.09 AM.jpeg" alt="Namana Shankar - Photo" class="about-avatar-img avatar-photo" id="avatar-photo-view">
+                  
+                  <div class="avatar-scanlines" aria-hidden="true"></div>
+                  <span class="corner-stud top-left"></span>
+                  <span class="corner-stud top-right"></span>
+                  <span class="corner-stud bottom-left"></span>
+                  <span class="corner-stud bottom-right"></span>
+                </div>
+
+                <!-- Avatar Toggle Pill -->
+                <div class="avatar-switch-bar" role="group" aria-label="Avatar display mode">
+                  <button type="button" class="btn-avatar-switch active" id="switch-pixel-btn" aria-label="Show pixel art avatar">
+                    &#127918; PIXEL
+                  </button>
+                  <button type="button" class="btn-avatar-switch" id="switch-photo-btn" aria-label="Show real photo">
+                    &#128247; PHOTO
+                  </button>
+                </div>
+              </div>
+
+              <!-- Quick Info / Key At-A-Glance Stats -->
+              <div class="about-quick-specs">
+                <div class="spec-row">
+                  <span class="spec-label">NAME</span>
+                  <span class="spec-value">Namana Shankar</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">DEGREE</span>
+                  <span class="spec-value">B.E. CSE (Data Science)</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">LOCATION</span>
+                  <span class="spec-value">Karnataka, India</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">STATUS</span>
+                  <span class="spec-value status-available">
+                    <span class="pixel-dot-pulse"></span> Open to Roles
+                  </span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Column 2: Bio, Career Highlights & Personal Interests -->
+          <div class="about-narrative-col">
+            
+            <!-- Short Bio -->
+            <div class="about-bio-panel">
+              <h3 class="about-subheading">Software Engineer &bull; Full-Stack &amp; Data Science</h3>
+              <p class="about-paragraph">
+                I am a passionate software engineer and recent Computer Science graduate specialized in <strong>Data Science</strong> from Adichunchanagiri Institute of Technology. I am driven by the craft of building scalable web systems, data-driven applications, and writing clean, reliable code that solves real-world challenges.
+              </p>
+              <p class="about-paragraph">
+                With a strong foundational grasp of <strong>C, Java, Python</strong>, and modern frontend technologies, I enjoy dissecting complex systems, creating algorithmic solutions, and translating business logic into intuitive user experiences.
+              </p>
+            </div>
+
+            <!-- Career Highlights Cards -->
+            <div class="about-highlights-section">
+              <h4 class="about-group-title">&#9670; Career Highlights</h4>
+              <div class="highlights-grid">
+                
+                <div class="highlight-item">
+                  <div class="highlight-icon" aria-hidden="true">&#127891;</div>
+                  <div class="highlight-body">
+                    <h5 class="highlight-title">B.E. in CSE (Data Science)</h5>
+                    <p class="highlight-desc">Adichunchanagiri Institute of Technology (CGPA: 7.10). Deep coursework in Data Structures, Algorithms, and Analytics.</p>
+                  </div>
+                </div>
+
+                <div class="highlight-item">
+                  <div class="highlight-icon" aria-hidden="true">&#9889;</div>
+                  <div class="highlight-body">
+                    <h5 class="highlight-title">Smart Solar Energy Project</h5>
+                    <p class="highlight-desc">Engineered an automated street lighting system utilizing LDR sensors, charge controllers, and energy optimization algorithms.</p>
+                  </div>
+                </div>
+
+                <div class="highlight-item">
+                  <div class="highlight-icon" aria-hidden="true">&#128187;</div>
+                  <div class="highlight-body">
+                    <h5 class="highlight-title">Unix &amp; Systems Training</h5>
+                    <p class="highlight-desc">Completed Introduction to Unix on Infosys Springboard, mastering bash automation, shell scripting, and CLI utilities.</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Personal Interests & Passions -->
+            <div class="about-interests-section">
+              <h4 class="about-group-title">&#9670; Personal Interests &amp; Passions</h4>
+              <div class="interests-tags-wrap">
+                <span class="interest-pill"><span class="pill-glyph">&#129513;</span> Problem Solving &amp; DSA</span>
+                <span class="interest-pill"><span class="pill-glyph">&#128202;</span> Data Analytics &amp; Science</span>
+                <span class="interest-pill"><span class="pill-glyph">&#128187;</span> Clean Web Architecture</span>
+                <span class="interest-pill"><span class="pill-glyph">&#127918;</span> Retro Tech &amp; Pixel Aesthetics</span>
+                <span class="interest-pill"><span class="pill-glyph">&#9881;</span> IoT &amp; Embedded Logic</span>
+                <span class="interest-pill"><span class="pill-glyph">&#128218;</span> Continuous Learning</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- SECTION 3: SKILLS                                       -->
+    <!-- Pixel Art RPG Skill Tree & Technical Competencies       -->
+    <!-- ======================================================= -->
+    <section id="skills" class="section skills-section" aria-labelledby="skills-title">
+      <div class="container">
+        
+        <header class="section-header">
+          <span class="section-eyebrow">02. Character Attributes</span>
+          <h2 id="skills-title" class="section-title">Technical Skills</h2>
+          <p class="section-subtitle">Core competencies, programming languages, and toolchains leveled up through academic projects and engineering challenges.</p>
+        </header>
+
+        <!-- Interactive Skill Category Filter Pills -->
+        <div class="skills-filter-bar" role="tablist" aria-label="Skill Categories">
+          <button type="button" class="btn-filter-pill active" data-filter="all" role="tab" aria-selected="true">
+            <span class="filter-icon">&#9733;</span> ALL SKILLS
+          </button>
+          <button type="button" class="btn-filter-pill" data-filter="languages" role="tab" aria-selected="false">
+            <span class="filter-icon">&#9889;</span> LANGUAGES
+          </button>
+          <button type="button" class="btn-filter-pill" data-filter="frontend" role="tab" aria-selected="false">
+            <span class="filter-icon">&#127760;</span> FRONTEND
+          </button>
+          <button type="button" class="btn-filter-pill" data-filter="core-data" role="tab" aria-selected="false">
+            <span class="filter-icon">&#129504;</span> CORE &amp; DATA
+          </button>
+          <button type="button" class="btn-filter-pill" data-filter="tools" role="tab" aria-selected="false">
+            <span class="filter-icon">&#128736;</span> TOOLS &amp; SYSTEMS
+          </button>
+        </div>
+
+        <div class="skills-grid" id="skills-grid-container">
+          
+          <!-- =================================================== -->
+          <!-- SKILL CATEGORY 1: PROGRAMMING LANGUAGES             -->
+          <!-- Highlighting algorithmic syntax, OOP, and systems   -->
+          <!-- =================================================== -->
+          <article class="pixel-card skill-card" data-category="languages">
+            <div class="skill-card-header">
+              <div class="skill-category-badge">
+                <span class="badge-icon">&#9889;</span>
+                <span class="badge-title">Languages</span>
+              </div>
+              <span class="skill-level-tag">CORE TIER</span>
+            </div>
+
+            <p class="skill-card-desc">
+              Strong foundations in compiled, object-oriented, and scripting languages for problem solving and backend development.
+            </p>
+
+            <ul class="skills-metric-list" role="list">
+              <!-- Python: Primary language for Data Science, rapid prototyping, and scripting -->
+              <li class="skill-metric-item">
+                <div class="metric-info">
+                  <span class="skill-name">
+                    <span class="pixel-bullet">&#9670;</span> Python
+                  </span>
+                  <span class="skill-percent">88%</span>
+                </div>
+                <div class="pixel-progress-track" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="Python proficiency: 88%">
+                  <div class="pixel-progress-fill fill-python" style="--target-width: 88%;"></div>
+                </div>
+                <span class="skill-note">Data manipulation, scripts, algorithms</span>
+              </li>
+
+              <!-- Java: Object-oriented design, robust structure, and enterprise logic -->
+              <li class="skill-metric-item">
+                <div class="metric-info">
+                  <span class="skill-name">
+                    <span class="pixel-bullet">&#9670;</span> Java
+                  </span>
+                  <span class="skill-percent">82%</span>
+                </div>
+                <div class="pixel-progress-track" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" aria-label="Java proficiency: 82%">
+                  <div class="pixel-progress-fill fill-java" style="--target-width: 82%;"></div>
+                </div>
+                <span class="skill-note">OOP design patterns, collections, data structures</span>
+              </li>
+
+              <!-- C: Low-level memory management, pointers, and performance -->
+              <li class="skill-metric-item">
+                <div class="metric-info">
+                  <span class="skill-name">
+                    <span class="pixel-bullet">&#9670;</span> C
+                  </span>
+                  <span class="skill-percent">80%</span>
+                </div>
+                <div class="pixel-progress-track" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="C proficiency: 80%">
+                  <div class="pixel-progress-fill fill-c" style="--target-width: 80%;"></div>
+                </div>
+                <span class="skill-note">Memory pointers, system-level execution</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- =================================================== -->
+          <!-- SKILL CATEGORY 2: FRONTEND & WEB ARCHITECTURE       -->
+          <!-- Responsive layout, semantic standards, styling      -->
+          <!-- =================================================== -->
+          <article class="pixel-card skill-card" data-category="frontend">
+            <div class="skill-card-header">
+              <div class="skill-category-badge">
+                <span class="badge-icon">&#127760;</span>
+                <span class="badge-title">Frontend</span>
+              </div>
+              <span class="skill-level-tag">UI / UX</span>
+            </div>
+
+            <p class="skill-card-desc">
+              Crafting accessible, responsive web interfaces with modern styling and intuitive interactions.
+            </p>
+
+            <ul class="skills-metric-list" role="list">
+              <!-- HTML5: Semantic structure, accessibility landmarks, SEO -->
+              <li class="skill-metric-item">
+                <div class="metric-info">
+                  <span class="skill-name">
+                    <span class="pixel-bullet">&#9670;</span> HTML5
+                  </span>
+                  <span class="skill-percent">92%</span>
+                </div>
+                <div class="pixel-progress-track" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" aria-label="HTML5 proficiency: 92%">
+                  <div class="pixel-progress-fill fill-html" style="--target-width: 92%;"></div>
+                </div>
+                <span class="skill-note">Semantic hierarchy, ARIA, clean markup</span>
+              </li>
+
+              <!-- CSS3: Vanilla CSS, Flexbox, Grid, custom properties, responsive media queries -->
+              <li class="skill-metric-item">
+                <div class="metric-info">
+                  <span class="skill-name">
+                    <span class="pixel-bullet">&#9670;</span> CSS3 / Styling
+                  </span>
+                  <span class="skill-percent">86%</span>
+                </div>
+                <div class="pixel-progress-track" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100" aria-label="CSS3 proficiency: 86%">
+                  <div class="pixel-progress-fill fill-css" style="--target-width: 86%;"></div>
+                </div>
+                <span class="skill-note">Flexbox, CSS Grid, media queries, animations</span>
+              </li>
+
+              <!-- JavaScript: DOM manipulation, events, asynchronous APIs -->
+              <li class="skill-metric-item">
+                <div class="metric-info">
+                  <span class="skill-name">
+                    <span class="pixel-bullet">&#9670;</span> JavaScript (ES6+)
+                  </span>
+                  <span class="skill-percent">78%</span>
+                </div>
+                <div class="pixel-progress-track" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" aria-label="JavaScript proficiency: 78%">
+                  <div class="pixel-progress-fill fill-js" style="--target-width: 78%;"></div>
+                </div>
+                <span class="skill-note">DOM manipulation, event lifecycle, Web Audio</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- =================================================== -->
+          <!-- SKILL CATEGORY 3: CORE CS & DATA SCIENCE            -->
+          <!-- Algorithmic thinking, data structures, analysis     -->
+          <!-- =================================================== -->
+          <article class="pixel-card skill-card" data-category="core-data">
+            <div class="skill-card-header">
+              <div class="skill-category-badge">
+                <span class="badge-icon">&#129504;</span>
+                <span class="badge-title">Core &amp; Data</span>
+              </div>
+              <span class="skill-level-tag">ANALYTICAL</span>
+            </div>
+
+            <p class="skill-card-desc">
+              Algorithmic problem solving, data structure optimization, and statistical modeling.
+            </p>
+
+            <ul class="skills-metric-list" role="list">
+              <!-- Data Structures & Algorithms: Essential for efficient computational complexity -->
+              <li class="skill-metric-item">
+                <div class="metric-info">
+                  <span class="skill-name">
+                    <span class="pixel-bullet">&#9670;</span> Data Structures (DSA)
+                  </span>
+                  <span class="skill-percent">84%</span>
+                </div>
+                <div class="pixel-progress-track" role="progressbar" aria-valuenow="84" aria-valuemin="0" aria-valuemax="100" aria-label="DSA proficiency: 84%">
+                  <div class="pixel-progress-fill fill-dsa" style="--target-width: 84%;"></div>
+                </div>
+                <span class="skill-note">Arrays, linked lists, trees, complexity analysis</span>
+              </li>
+
+              <!-- Problem Solving: Analytical logic, debugging, and edge-case handling -->
+              <li class="skill-metric-item">
+                <div class="metric-info">
+                  <span class="skill-name">
+                    <span class="pixel-bullet">&#9670;</span> Problem Solving
+                  </span>
+                  <span class="skill-percent">86%</span>
+                </div>
+                <div class="pixel-progress-track" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100" aria-label="Problem solving proficiency: 86%">
+                  <div class="pixel-progress-fill fill-ps" style="--target-width: 86%;"></div>
+                </div>
+                <span class="skill-note">Algorithmic debugging, optimization logic</span>
+              </li>
+
+              <!-- Data Science Fundamentals: Analysis, preprocessing, pattern evaluation -->
+              <li class="skill-metric-item">
+                <div class="metric-info">
+                  <span class="skill-name">
+                    <span class="pixel-bullet">&#9670;</span> Data Science &amp; Analysis
+                  </span>
+                  <span class="skill-percent">78%</span>
+                </div>
+                <div class="pixel-progress-track" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" aria-label="Data Science proficiency: 78%">
+                  <div class="pixel-progress-fill fill-data" style="--target-width: 78%;"></div>
+                </div>
+                <span class="skill-note">Pattern recognition, statistical analysis</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- =================================================== -->
+          <!-- SKILL CATEGORY 4: TOOLS, SYSTEMS & EMBEDDED         -->
+          <!-- Operating systems, source control, IoT hardware     -->
+          <!-- =================================================== -->
+          <article class="pixel-card skill-card" data-category="tools">
+            <div class="skill-card-header">
+              <div class="skill-category-badge">
+                <span class="badge-icon">&#128736;</span>
+                <span class="badge-title">Tools &amp; Systems</span>
+              </div>
+              <span class="skill-level-tag">DEVELOPER OPS</span>
+            </div>
+
+            <p class="skill-card-desc">
+              Development environments, system scripting, version control, and embedded sensor integration.
+            </p>
+
+            <ul class="skills-metric-list" role="list">
+              <!-- Unix / Linux: Command-line fluency, shell scripting, environment management -->
+              <li class="skill-metric-item">
+                <div class="metric-info">
+                  <span class="skill-name">
+                    <span class="pixel-bullet">&#9670;</span> Unix / Linux
+                  </span>
+                  <span class="skill-percent">82%</span>
+                </div>
+                <div class="pixel-progress-track" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" aria-label="Unix proficiency: 82%">
+                  <div class="pixel-progress-fill fill-unix" style="--target-width: 82%;"></div>
+                </div>
+                <span class="skill-note">Infosys Springboard certified, bash, CLI tools</span>
+              </li>
+
+              <!-- Git & GitHub: Version control, repository maintenance, collaborative workflows -->
+              <li class="skill-metric-item">
+                <div class="metric-info">
+                  <span class="skill-name">
+                    <span class="pixel-bullet">&#9670;</span> Git &amp; Version Control
+                  </span>
+                  <span class="skill-percent">80%</span>
+                </div>
+                <div class="pixel-progress-track" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="Git proficiency: 80%">
+                  <div class="pixel-progress-fill fill-git" style="--target-width: 80%;"></div>
+                </div>
+                <span class="skill-note">Branching, commit hygiene, GitHub sync</span>
+              </li>
+
+              <!-- Hardware & IoT: LDR sensors, Solar charge controllers, embedded control -->
+              <li class="skill-metric-item">
+                <div class="metric-info">
+                  <span class="skill-name">
+                    <span class="pixel-bullet">&#9670;</span> IoT &amp; Hardware Sensors
+                  </span>
+                  <span class="skill-percent">76%</span>
+                </div>
+                <div class="pixel-progress-track" role="progressbar" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100" aria-label="IoT proficiency: 76%">
+                  <div class="pixel-progress-fill fill-iot" style="--target-width: 76%;"></div>
+                </div>
+                <span class="skill-note">LDR sensors, power controllers, solar circuits</span>
+              </li>
+            </ul>
+          </article>
+
+        </div>
+
+        <!-- Interactive Tech Stack Badges Strip -->
+        <div class="skills-dock-footer">
+          <div class="dock-title">
+            <span class="pixel-dot-pulse"></span>
+            <span>ADDITIONAL TOOLCHAIN &amp; REPERTORY</span>
+          </div>
+          <div class="dock-chips-container">
+            <span class="tech-chip"><span class="chip-dot"></span> VS Code</span>
+            <span class="tech-chip"><span class="chip-dot"></span> Bash Scripting</span>
+            <span class="tech-chip"><span class="chip-dot"></span> Object-Oriented Design</span>
+            <span class="tech-chip"><span class="chip-dot"></span> Solar Controllers</span>
+            <span class="tech-chip"><span class="chip-dot"></span> Responsive UI</span>
+            <span class="tech-chip"><span class="chip-dot"></span> Web Standards</span>
+            <span class="tech-chip"><span class="chip-dot"></span> GitHub Workflow</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- SECTION 4: TIMELINE (EDUCATION & MAJOR MILESTONES)      -->
+    <!-- Rounded Cards, Smooth CSS Transitions, Minimalist Theme -->
+    <!-- ======================================================= -->
+    <section id="timeline" class="section timeline-section" aria-labelledby="timeline-title">
+      <div class="container">
+        
+        <header class="section-header">
+          <span class="section-eyebrow">03. Chronology &amp; Milestones</span>
+          <h2 id="timeline-title" class="section-title">Career &amp; Education Timeline</h2>
+          <p class="section-subtitle">A journey through academic excellence, specialized coursework, and hands-on engineering projects.</p>
+        </header>
+
+        <!-- Timeline Category Filter Bar -->
+        <div class="timeline-filter-bar" role="tablist" aria-label="Timeline Categories">
+          <button type="button" class="btn-timeline-filter active" data-timeline-filter="all" role="tab" aria-selected="true">
+            <span class="filter-icon">&#9733;</span> ALL MILESTONES
+          </button>
+          <button type="button" class="btn-timeline-filter" data-timeline-filter="education" role="tab" aria-selected="false">
+            <span class="filter-icon">&#127891;</span> EDUCATION
+          </button>
+          <button type="button" class="btn-timeline-filter" data-timeline-filter="projects" role="tab" aria-selected="false">
+            <span class="filter-icon">&#9889;</span> PROJECTS &amp; AWARDS
+          </button>
+        </div>
+
+        <!-- Central Timeline Track -->
+        <div class="timeline-track-wrapper">
+          <div class="timeline-spine" aria-hidden="true"></div>
+
+          <div class="timeline-cards-list">
+
+            <!-- =================================================== -->
+            <!-- TIMELINE ITEM 1: CAREER LAUNCH / ASPIRING SE        -->
+            <!-- =================================================== -->
+            <article class="timeline-item" data-timeline-cat="projects">
+              <div class="timeline-node-marker" aria-hidden="true">
+                <span class="node-inner-dot"></span>
+              </div>
+              <div class="timeline-card rounded-box">
+                <div class="timeline-card-header">
+                  <span class="timeline-date-badge">Present</span>
+                  <span class="timeline-pill pill-active">
+                    <span class="pixel-dot-pulse"></span> SEEKING OPPORTUNITIES
+                  </span>
+                </div>
+                <h3 class="timeline-role">Aspiring Software Engineer</h3>
+                <h4 class="timeline-company">Open for Industry Roles &bull; Fresher</h4>
+                <p class="timeline-description">
+                  Currently seeking opportunities to apply practical programming, Data Structures, and analytical problem-solving skills to real-world software systems.
+                </p>
+                <div class="timeline-tags">
+                  <span class="rounded-tag">Software Development</span>
+                  <span class="rounded-tag">Data Science</span>
+                  <span class="rounded-tag">Problem Solving</span>
+                  <span class="rounded-tag">Python &amp; Java</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- =================================================== -->
+            <!-- TIMELINE ITEM 2: B.E. IN CSE (DATA SCIENCE)         -->
+            <!-- =================================================== -->
+            <article class="timeline-item" data-timeline-cat="education">
+              <div class="timeline-node-marker" aria-hidden="true">
+                <span class="node-inner-dot"></span>
+              </div>
+              <div class="timeline-card rounded-box">
+                <div class="timeline-card-header">
+                  <span class="timeline-date-badge">2025 &ndash; 2026</span>
+                  <span class="timeline-pill pill-grade">CGPA: 7.10</span>
+                </div>
+                <h3 class="timeline-role">B.E. in Computer Science &amp; Engineering (Data Science)</h3>
+                <h4 class="timeline-company">Adichunchanagiri Institute of Technology, Chikkamagaluru</h4>
+                <p class="timeline-description">
+                  Specialized in Data Science with core coursework in Data Structures, Algorithm Design, Database Management, and Object-Oriented Systems. Participated in project development and coding challenges.
+                </p>
+                <div class="timeline-tags">
+                  <span class="rounded-tag">Data Structures</span>
+                  <span class="rounded-tag">Database Architecture</span>
+                  <span class="rounded-tag">Data Analysis</span>
+                  <span class="rounded-tag">OOP</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- =================================================== -->
+            <!-- TIMELINE ITEM 3: SOLAR STREET LIGHT PROJECT         -->
+            <!-- =================================================== -->
+            <article class="timeline-item" data-timeline-cat="projects">
+              <div class="timeline-node-marker" aria-hidden="true">
+                <span class="node-inner-dot"></span>
+              </div>
+              <div class="timeline-card rounded-box">
+                <div class="timeline-card-header">
+                  <span class="timeline-date-badge">Major Project</span>
+                  <span class="timeline-pill pill-featured">&#9733; FEATURED PROJECT</span>
+                </div>
+                <h3 class="timeline-role">Street Light Using Solar Panel &amp; LDR</h3>
+                <h4 class="timeline-company">Hardware-Software Automation &bull; 1 Week Sprint</h4>
+                <p class="timeline-description">
+                  Developed an intelligent, solar-powered street lighting system using solar panels, rechargeable battery, charge controller, and high-efficiency LED lights. Integrated an LDR sensor to automatically detect ambient light levels and optimize power consumption.
+                </p>
+                <div class="timeline-tags">
+                  <span class="rounded-tag">Solar Energy</span>
+                  <span class="rounded-tag">LDR Sensors</span>
+                  <span class="rounded-tag">Power Optimization</span>
+                  <span class="rounded-tag">IoT Automation</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- =================================================== -->
+            <!-- TIMELINE ITEM 4: INFOSYS SPRINGBOARD UNIX COURSE    -->
+            <!-- =================================================== -->
+            <article class="timeline-item" data-timeline-cat="projects">
+              <div class="timeline-node-marker" aria-hidden="true">
+                <span class="node-inner-dot"></span>
+              </div>
+              <div class="timeline-card rounded-box">
+                <div class="timeline-card-header">
+                  <span class="timeline-date-badge">Certification</span>
+                  <span class="timeline-pill pill-cert">&#10003; INFOSYS SPRINGBOARD</span>
+                </div>
+                <h3 class="timeline-role">Introduction to Unix Certification</h3>
+                <h4 class="timeline-company">Infosys Springboard Learning Platform</h4>
+                <p class="timeline-description">
+                  Completed in-depth technical training on Unix operating system fundamentals, shell commands, process management, text processing pipelines, and bash scripting.
+                </p>
+                <div class="timeline-tags">
+                  <span class="rounded-tag">Unix OS</span>
+                  <span class="rounded-tag">Shell Scripting</span>
+                  <span class="rounded-tag">CLI Navigation</span>
+                  <span class="rounded-tag">Process Mgmt</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- =================================================== -->
+            <!-- TIMELINE ITEM 5: PRE-UNIVERSITY (PUC)               -->
+            <!-- =================================================== -->
+            <article class="timeline-item" data-timeline-cat="education">
+              <div class="timeline-node-marker" aria-hidden="true">
+                <span class="node-inner-dot"></span>
+              </div>
+              <div class="timeline-card rounded-box">
+                <div class="timeline-card-header">
+                  <span class="timeline-date-badge">2023 &ndash; 2025</span>
+                  <span class="timeline-pill pill-grade">SCORE: 85.83%</span>
+                </div>
+                <h3 class="timeline-role">Pre-University Course (PUC) &ndash; Science</h3>
+                <h4 class="timeline-company">BGS VS PU College, Mudigere</h4>
+                <p class="timeline-description">
+                  Completed rigorous pre-university curriculum focusing on analytical mathematics, physics, chemistry, and foundational computer science principles.
+                </p>
+                <div class="timeline-tags">
+                  <span class="rounded-tag">Mathematics</span>
+                  <span class="rounded-tag">Computer Science</span>
+                  <span class="rounded-tag">Physics</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- =================================================== -->
+            <!-- TIMELINE ITEM 6: SECONDARY SCHOOL (SSLC)            -->
+            <!-- =================================================== -->
+            <article class="timeline-item" data-timeline-cat="education">
+              <div class="timeline-node-marker" aria-hidden="true">
+                <span class="node-inner-dot"></span>
+              </div>
+              <div class="timeline-card rounded-box">
+                <div class="timeline-card-header">
+                  <span class="timeline-date-badge">2022 &ndash; 2023</span>
+                  <span class="timeline-pill pill-grade">DISTINCTION: 91.04%</span>
+                </div>
+                <h3 class="timeline-role">Secondary School Leaving Certificate (SSLC)</h3>
+                <h4 class="timeline-company">GHP School, Mudigere</h4>
+                <p class="timeline-description">
+                  Graduated with exemplary academic distinction (91.04%), building strong quantitative fundamentals and logical reasoning skills.
+                </p>
+                <div class="timeline-tags">
+                  <span class="rounded-tag">Distinction 91%</span>
+                  <span class="rounded-tag">Foundational Sciences</span>
+                  <span class="rounded-tag">Mathematics</span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- ======================================================= -->
+    <!-- SECTION 5: PROJECTS (PORTFOLIO SHOWCASE & QUESTS)       -->
+    <!-- Clickable Thumbnails, Consistent Spacing, Detail Modal  -->
+    <!-- ======================================================= -->
+    <section id="projects" class="section projects-section" aria-labelledby="projects-title">
+      <div class="container">
+        
+        <header class="section-header">
+          <span class="section-eyebrow">04. Engineering Quests</span>
+          <h2 id="projects-title" class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Click any project thumbnail to inspect detailed architecture, technical implementation, and code repositories.</p>
+        </header>
+
+        <div class="projects-grid">
+
+          <!-- ===================================================== -->
+          <!-- PROJECT 1: SMART SOLAR STREET LIGHTING SYSTEM         -->
+          <!-- THUMBNAIL CONNECTION: Clickable thumbnail element     -->
+          <!-- has [data-project-target="project-solar"]. When       -->
+          <!-- clicked, JavaScript loads the project-solar detail    -->
+          <!-- dataset into the modal and opens #project-modal.      -->
+          <!-- ===================================================== -->
+          <article class="pixel-card project-card" data-project-id="project-solar">
+            <!-- Clickable Project Thumbnail -->
+            <div class="project-thumbnail-wrapper" role="button" tabindex="0" data-project-target="project-solar" aria-label="Open detailed view for Smart Solar Street Light System">
+              <img src="project-solar.jpg" alt="Smart Solar Street Light System Thumbnail" class="project-thumbnail-img" loading="lazy">
+              <div class="thumbnail-scanlines" aria-hidden="true"></div>
+              <span class="corner-stud top-left"></span>
+              <span class="corner-stud top-right"></span>
+              <span class="corner-stud bottom-left"></span>
+              <span class="corner-stud bottom-right"></span>
+              <div class="thumbnail-hover-overlay" aria-hidden="true">
+                <span class="inspect-btn-badge">&#128269; VIEW DETAILS</span>
+              </div>
+              <span class="thumbnail-tag-pill">IoT &bull; HARDWARE</span>
+            </div>
+
+            <!-- Card Content Body -->
+            <div class="project-card-body">
+              <div class="project-header-meta">
+                <span class="project-quest-num">QUEST #01</span>
+                <span class="project-badge-flag">&#9733; FEATURED</span>
+              </div>
+
+              <h3 class="project-card-title">
+                <button type="button" class="btn-project-title-link" data-project-target="project-solar">
+                  Smart Solar Street Light System
+                </button>
+              </h3>
+
+              <p class="project-card-excerpt">
+                Autonomous street lighting system combining solar PV panels, LDR ambient light sensors, and rechargeable controllers to dynamically optimize municipal energy draw.
+              </p>
+
+              <ul class="project-tech-pills" role="list">
+                <li>Solar PV Panel</li>
+                <li>LDR Sensor</li>
+                <li>Charge Controller</li>
+                <li>Energy Optimization</li>
+              </ul>
+
+              <div class="project-action-links">
+                <!-- Button connected to modal detail view -->
+                <button type="button" class="btn-pixel btn-view-specs" data-project-target="project-solar" aria-label="Inspect specifications for Solar Street Light">
+                  &#9658; SPECS
+                </button>
+                <a href="https://github.com/namana-shankar" target="_blank" rel="noopener noreferrer" class="btn-pixel btn-repo-link" aria-label="Source code on GitHub">
+                  &#128194; CODE
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ===================================================== -->
+          <!-- PROJECT 2: ALGORITHM & DATA STRUCTURES VISUALIZER     -->
+          <!-- THUMBNAIL CONNECTION: Clickable thumbnail with        -->
+          <!-- [data-project-target="project-algo"] opens detailed   -->
+          <!-- specifications for the Algorithm Visualizer project.  -->
+          <!-- ===================================================== -->
+          <article class="pixel-card project-card" data-project-id="project-algo">
+            <!-- Clickable Project Thumbnail -->
+            <div class="project-thumbnail-wrapper" role="button" tabindex="0" data-project-target="project-algo" aria-label="Open detailed view for Algorithm Visualizer">
+              <img src="project-algo.jpg" alt="Algorithm and Data Structures Visualizer Thumbnail" class="project-thumbnail-img" loading="lazy">
+              <div class="thumbnail-scanlines" aria-hidden="true"></div>
+              <span class="corner-stud top-left"></span>
+              <span class="corner-stud top-right"></span>
+              <span class="corner-stud bottom-left"></span>
+              <span class="corner-stud bottom-right"></span>
+              <div class="thumbnail-hover-overlay" aria-hidden="true">
+                <span class="inspect-btn-badge">&#128269; VIEW DETAILS</span>
+              </div>
+              <span class="thumbnail-tag-pill">DSA &bull; PYTHON</span>
+            </div>
+
+            <!-- Card Content Body -->
+            <div class="project-card-body">
+              <div class="project-header-meta">
+                <span class="project-quest-num">QUEST #02</span>
+                <span class="project-badge-flag">INTERACTIVE</span>
+              </div>
+
+              <h3 class="project-card-title">
+                <button type="button" class="btn-project-title-link" data-project-target="project-algo">
+                  Algorithm &amp; DSA Visualizer
+                </button>
+              </h3>
+
+              <p class="project-card-excerpt">
+                Step-by-step interactive simulator illustrating sorting algorithms, binary search trees, and graph traversal with real-time complexity meters.
+              </p>
+
+              <ul class="project-tech-pills" role="list">
+                <li>Python</li>
+                <li>Algorithms</li>
+                <li>Data Structures</li>
+                <li>Complexity Analysis</li>
+              </ul>
+
+              <div class="project-action-links">
+                <!-- Button connected to modal detail view -->
+                <button type="button" class="btn-pixel btn-view-specs" data-project-target="project-algo" aria-label="Inspect specifications for Algorithm Visualizer">
+                  &#9658; SPECS
+                </button>
+                <a href="https://github.com/namana-shankar" target="_blank" rel="noopener noreferrer" class="btn-pixel btn-repo-link" aria-label="Source code on GitHub">
+                  &#128194; CODE
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ===================================================== -->
+          <!-- PROJECT 3: UNIX SERVER MONITOR & CLI PIPELINE        -->
+          <!-- THUMBNAIL CONNECTION: Clickable thumbnail with        -->
+          <!-- [data-project-target="project-unix"] connects to the  -->
+          <!-- Unix Log Monitor & Automated Pipeline detail spec.    -->
+          <!-- ===================================================== -->
+          <article class="pixel-card project-card" data-project-id="project-unix">
+            <!-- Clickable Project Thumbnail -->
+            <div class="project-thumbnail-wrapper" role="button" tabindex="0" data-project-target="project-unix" aria-label="Open detailed view for Unix Log Monitor">
+              <img src="project-unix.jpg" alt="Unix Server Log Monitor and CLI Pipeline Thumbnail" class="project-thumbnail-img" loading="lazy">
+              <div class="thumbnail-scanlines" aria-hidden="true"></div>
+              <span class="corner-stud top-left"></span>
+              <span class="corner-stud top-right"></span>
+              <span class="corner-stud bottom-left"></span>
+              <span class="corner-stud bottom-right"></span>
+              <div class="thumbnail-hover-overlay" aria-hidden="true">
+                <span class="inspect-btn-badge">&#128269; VIEW DETAILS</span>
+              </div>
+              <span class="thumbnail-tag-pill">SYSTEMS &bull; UNIX</span>
+            </div>
+
+            <!-- Card Content Body -->
+            <div class="project-card-body">
+              <div class="project-header-meta">
+                <span class="project-quest-num">QUEST #03</span>
+                <span class="project-badge-flag">CLI TOOLING</span>
+              </div>
+
+              <h3 class="project-card-title">
+                <button type="button" class="btn-project-title-link" data-project-target="project-unix">
+                  Unix Automated Log Monitor
+                </button>
+              </h3>
+
+              <p class="project-card-excerpt">
+                Bash automation utility engineered to parse syslog streams, inspect server memory and disk health, and generate automated diagnostic summaries.
+              </p>
+
+              <ul class="project-tech-pills" role="list">
+                <li>Unix Shell</li>
+                <li>Bash Scripting</li>
+                <li>Grep / Awk / Sed</li>
+                <li>Cron Automation</li>
+              </ul>
+
+              <div class="project-action-links">
+                <!-- Button connected to modal detail view -->
+                <button type="button" class="btn-pixel btn-view-specs" data-project-target="project-unix" aria-label="Inspect specifications for Unix Log Monitor">
+                  &#9658; SPECS
+                </button>
+                <a href="https://github.com/namana-shankar" target="_blank" rel="noopener noreferrer" class="btn-pixel btn-repo-link" aria-label="Source code on GitHub">
+                  &#128194; CODE
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ===================================================== -->
+          <!-- PROJECT 4: CYBER-ANALYTICS DATA SCIENCE DASHBOARD     -->
+          <!-- THUMBNAIL CONNECTION: Clickable thumbnail with        -->
+          <!-- [data-project-target="project-data"] triggers the     -->
+          <!-- Data Science Analytics detailed specification modal.  -->
+          <!-- ===================================================== -->
+          <article class="pixel-card project-card" data-project-id="project-data">
+            <!-- Clickable Project Thumbnail -->
+            <div class="project-thumbnail-wrapper" role="button" tabindex="0" data-project-target="project-data" aria-label="Open detailed view for Data Science Dashboard">
+              <img src="project-data.jpg" alt="Data Science Cyber Analytics Dashboard Thumbnail" class="project-thumbnail-img" loading="lazy">
+              <div class="thumbnail-scanlines" aria-hidden="true"></div>
+              <span class="corner-stud top-left"></span>
+              <span class="corner-stud top-right"></span>
+              <span class="corner-stud bottom-left"></span>
+              <span class="corner-stud bottom-right"></span>
+              <div class="thumbnail-hover-overlay" aria-hidden="true">
+                <span class="inspect-btn-badge">&#128269; VIEW DETAILS</span>
+              </div>
+              <span class="thumbnail-tag-pill">ANALYTICS &bull; ML</span>
+            </div>
+
+            <!-- Card Content Body -->
+            <div class="project-card-body">
+              <div class="project-header-meta">
+                <span class="project-quest-num">QUEST #04</span>
+                <span class="project-badge-flag">DATA SCIENCE</span>
+              </div>
+
+              <h3 class="project-card-title">
+                <button type="button" class="btn-project-title-link" data-project-target="project-data">
+                  Cyber-Analytics Data Suite
+                </button>
+              </h3>
+
+              <p class="project-card-excerpt">
+                Data science suite performing statistical distributions, multi-variable correlation analysis, outlier detection, and predictive modeling evaluations.
+              </p>
+
+              <ul class="project-tech-pills" role="list">
+                <li>Python</li>
+                <li>Pandas &amp; NumPy</li>
+                <li>Data Preprocessing</li>
+                <li>Statistical Models</li>
+              </ul>
+
+              <div class="project-action-links">
+                <!-- Button connected to modal detail view -->
+                <button type="button" class="btn-pixel btn-view-specs" data-project-target="project-data" aria-label="Inspect specifications for Data Science Suite">
+                  &#9658; SPECS
+                </button>
+                <a href="https://github.com/namana-shankar" target="_blank" rel="noopener noreferrer" class="btn-pixel btn-repo-link" aria-label="Source code on GitHub">
+                  &#128194; CODE
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- PROJECT DETAIL MODAL DIALOG                               -->
+    <!-- Connected to thumbnails via data-project-target attribute -->
+    <!-- ========================================================= -->
+    <dialog class="pixel-project-modal" id="project-modal" aria-labelledby="modal-project-title" aria-modal="true">
+      <div class="modal-window">
+        <!-- Retro Arcade Titlebar -->
+        <div class="modal-titlebar">
+          <span class="modal-titlebar-text">&#9654; <span id="modal-window-id">PROJECT_SPECS.EXE</span></span>
+          <button type="button" class="btn-modal-close" id="modal-close-btn" aria-label="Close specifications window">&#10005;</button>
+        </div>
+
+        <!-- Modal Scrollable Body -->
+        <div class="modal-body-content">
+          <!-- Thumbnail Hero in Modal -->
+          <div class="modal-preview-frame">
+            <img src="" alt="Project Preview" id="modal-project-img" class="modal-img">
+            <div class="modal-scanlines" aria-hidden="true"></div>
+            <span class="modal-category-badge" id="modal-project-category">CATEGORY</span>
+          </div>
+
+          <div class="modal-info-panel">
+            <div class="modal-meta-row">
+              <span class="modal-quest-num" id="modal-project-quest">QUEST #01</span>
+              <span class="modal-timeline-tag" id="modal-project-duration">Duration</span>
+            </div>
+
+            <h3 class="modal-heading" id="modal-project-title">Project Title</h3>
+            <p class="modal-tagline" id="modal-project-tagline">Tagline</p>
+
+            <div class="modal-section-group">
+              <h4 class="modal-section-title">&#9670; Overview &amp; Problem Solved</h4>
+              <p class="modal-text" id="modal-project-description">Description</p>
+            </div>
+
+            <div class="modal-section-group">
+              <h4 class="modal-section-title">&#9670; Key Engineering Highlights</h4>
+              <ul class="modal-bullets-list" id="modal-project-highlights">
+                <!-- Dynamically populated highlights -->
+              </ul>
+            </div>
+
+            <div class="modal-section-group">
+              <h4 class="modal-section-title">&#9670; Technologies &amp; Hardware</h4>
+              <div class="modal-tech-chips" id="modal-project-tech">
+                <!-- Dynamically populated tech tags -->
+              </div>
+            </div>
+
+            <div class="modal-actions-bar">
+              <a href="#" target="_blank" rel="noopener noreferrer" class="btn-pixel btn-pixel-primary" id="modal-repo-link">
+                &#128194; VIEW GITHUB REPOSITORY
+              </a>
+              <button type="button" class="btn-pixel btn-pixel-secondary" id="modal-dismiss-btn">
+                &#10005; CLOSE WINDOW
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- ============================================================== -->
+    <!-- VIDEO SHOWCASE SECTION: Portfolio Highlight / Introduction Reel -->
+    <!-- Responsive embed with pixel-art frame, caption, and controls    -->
+    <!-- ============================================================== -->
+    <section id="video-showcase" class="section video-showcase-section" aria-labelledby="video-showcase-title">
+      <div class="container">
+
+        <header class="section-header">
+          <span class="section-eyebrow">05. Portfolio Reel</span>
+          <h2 id="video-showcase-title" class="section-title">Highlight Reel</h2>
+          <p class="section-subtitle">A brief walkthrough of Namana's engineering projects, academic journey, and technical capabilities — from IoT hardware to data science analytics.</p>
+        </header>
+
+        <!-- Video Stage: Outer pixel-art terminal frame wrapping the responsive video -->
+        <div class="video-stage-wrapper">
+
+          <!-- Retro Terminal Titlebar above the video -->
+          <div class="video-titlebar" aria-hidden="true">
+            <span class="video-titlebar-dots">
+              <span class="vtb-dot vtb-red"></span>
+              <span class="vtb-dot vtb-yellow"></span>
+              <span class="vtb-dot vtb-green"></span>
+            </span>
+            <span class="video-titlebar-label">&#9654; PORTFOLIO_HIGHLIGHT_REEL.MP4</span>
+            <span class="video-titlebar-badge">&#128249; LIVE DEMO</span>
+          </div>
+
+          <!-- Responsive Video Container: maintains 16:9 aspect ratio at any viewport width -->
+          <!-- CSS technique: position relative + aspect-ratio: 16/9 on the wrapper         -->
+          <div class="video-frame-container">
+
+            <!-- CRT Scanlines overlay for pixel art aesthetic coherence -->
+            <div class="video-scanlines" aria-hidden="true"></div>
+
+            <!-- Corner Studs: 8-bit decorative corner markers on the video frame -->
+            <span class="video-corner-stud vc-tl" aria-hidden="true"></span>
+            <span class="video-corner-stud vc-tr" aria-hidden="true"></span>
+            <span class="video-corner-stud vc-bl" aria-hidden="true"></span>
+            <span class="video-corner-stud vc-br" aria-hidden="true"></span>
+
+            <!-- Play Overlay: Large pixel-art play button shown before video starts -->
+            <div class="video-play-overlay" id="video-play-overlay" role="button" tabindex="0" aria-label="Play portfolio reel video">
+              <div class="play-overlay-inner">
+                <span class="play-overlay-icon">&#9654;</span>
+                <span class="play-overlay-label">CLICK TO PLAY</span>
+              </div>
+            </div>
+
+            <!--
+              RESPONSIVE VIDEO ELEMENT
+              ─────────────────────────
+              • The <video> fills its parent .video-frame-container which uses
+                aspect-ratio: 16/9 + width: 100%, ensuring perfect scaling.
+              • controls attribute provides browser-native playback controls.
+              • The JS video controller (Section 10 in script.js) layers a custom
+                pixel-art play button on top for aesthetic consistency.
+              • Replace the src with your actual video file path or URL.
+              • The poster attribute provides a static thumbnail before play.
+            -->
+            <video
+              id="showcase-video"
+              class="showcase-video-el"
+              controls
+              preload="metadata"
+              poster="project-solar.jpg"
+              aria-label="Namana Shankar portfolio highlight reel video"
+            >
+              <!-- Primary MP4 source — the actual video file in the project folder -->
+              <source src="WhatsApp Video 2026-10-07 at 9.49.05 AM.mp4" type="video/mp4">
+              <!-- Fallback for browsers that do not support HTML5 video -->
+              <p class="video-fallback-msg">
+                Your browser does not support HTML5 video.
+                <a href="https://github.com/Namana-code" target="_blank" rel="noopener noreferrer">View my GitHub portfolio instead.</a>
+              </p>
+            </video>
+          </div><!-- /.video-frame-container -->
+
+          <!-- Video Controls Bar: custom pixel-art play/pause button + progress -->
+          <div class="video-controls-bar">
+            <button type="button" class="btn-pixel btn-pixel-primary video-play-pause-btn" id="video-play-btn" aria-label="Play or pause the portfolio reel">
+              &#9654; PLAY
+            </button>
+            <div class="video-meta-chips">
+              <span class="video-meta-chip">&#128249; Portfolio Reel 2025</span>
+              <span class="video-meta-chip">&#128203; B.E. CSE · Data Science</span>
+              <span class="video-meta-chip">&#127759; Adichunchanagiri Institute of Technology</span>
+            </div>
+          </div><!-- /.video-controls-bar -->
+
+          <!-- Caption Panel: describes video content in pixel-art card style -->
+          <figure class="video-caption-panel" role="region" aria-label="Video Caption">
+            <figcaption class="video-caption-body">
+              <span class="caption-icon" aria-hidden="true">&#9670;</span>
+              <div class="caption-text">
+                <strong class="caption-title">About This Reel</strong>
+                <p class="caption-desc">
+                  This highlight reel showcases Namana Shankar's core engineering projects — including the <em>Smart Solar Street Light IoT system</em>, <em>Unix log automation pipeline</em>, <em>Algorithm &amp; DSA Visualizer</em>, and <em>Cyber-Analytics Data Suite</em>. The video also covers her academic milestones at Adichunchanagiri Institute of Technology and her enthusiasm for building impactful, data-driven systems.
+                </p>
+              </div>
+            </figcaption>
+            <!-- Stats Strip below caption -->
+            <div class="caption-stats-strip">
+              <div class="caption-stat">
+                <span class="cstat-val">4+</span>
+                <span class="cstat-label">Projects Showcased</span>
+              </div>
+              <div class="caption-stat">
+                <span class="cstat-val">3 min</span>
+                <span class="cstat-label">Reel Duration</span>
+              </div>
+              <div class="caption-stat">
+                <span class="cstat-val">2025</span>
+                <span class="cstat-label">Portfolio Edition</span>
+              </div>
+              <div class="caption-stat">
+                <span class="cstat-val">HD</span>
+                <span class="cstat-label">1080p Quality</span>
+              </div>
+            </div>
+          </figure><!-- /.video-caption-panel -->
+
+        </div><!-- /.video-stage-wrapper -->
+      </div><!-- /.container -->
+    </section><!-- /#video-showcase -->
+
+    <!-- ======================================================= -->
+    <!-- SECTION 6: TESTIMONIALS (RETRO REVIEWS & ENDORSEMENTS)  -->
+    <!-- ======================================================= -->
+    <section id="testimonials" class="section testimonials-section" aria-labelledby="testimonials-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-eyebrow">05. Endorsements</span>
+          <h2 id="testimonials-title" class="section-title">Testimonials &amp; Feedback</h2>
+        </header>
+
+        <div class="testimonials-grid">
+          <!-- Testimonial Card 1 -->
+          <article class="pixel-card testimonial-card">
+            <div class="testimonial-rating" aria-label="5 out of 5 stars">
+              <span class="pixel-star">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            </div>
+            <p class="testimonial-quote">
+              "Namana shows exceptional analytical ability and problem-solving drive. Her commitment to clean architecture and reliable execution is inspiring."
+            </p>
+            <div class="testimonial-author">
+              <span class="author-name">Project Mentor</span>
+              <span class="author-role">Adichunchanagiri Inst. of Tech</span>
+            </div>
+          </article>
+
+          <!-- Testimonial Card 2 -->
+          <article class="pixel-card testimonial-card">
+            <div class="testimonial-rating" aria-label="5 out of 5 stars">
+              <span class="pixel-star">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            </div>
+            <p class="testimonial-quote">
+              "Dedicated, quick at grasping complex concepts, and a supportive team player during hackathons and engineering sprints."
+            </p>
+            <div class="testimonial-author">
+              <span class="author-name">Engineering Peer</span>
+              <span class="author-role">CSE Dept. Collaborator</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- SECTION 7: CHAT (RETRO 8-BIT TERMINAL COMMUNICATOR)     -->
+    <!-- ======================================================= -->
+    <section id="chat" class="section chat-section" aria-labelledby="chat-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-eyebrow">06. Live Transmission</span>
+          <h2 id="chat-title" class="section-title">Interactive Terminal Chat</h2>
+        </header>
+
+        <div class="pixel-terminal-chat">
+          <div class="terminal-titlebar">
+            <span class="terminal-title">&#9654; NPC_COMMUNICATOR.SYS</span>
+            <span class="terminal-badge">ONLINE</span>
+          </div>
+
+          <div class="terminal-messages" id="chat-messages" role="log" aria-live="polite">
+            <div class="chat-msg bot-msg">
+              <span class="chat-sender">[NAMANA_BOT]:</span>
+              <span class="chat-body">Greetings, traveler! I'm Namana's digital assistant. What would you like to know about her background or skills?</span>
+            </div>
+          </div>
+
+          <!-- Quick prompt suggestions -->
+          <div class="chat-quick-prompts">
+            <button type="button" class="btn-prompt" data-query="What are your core programming languages?">Core Languages</button>
+            <button type="button" class="btn-prompt" data-query="Tell me about your featured solar project.">Solar Project</button>
+            <button type="button" class="btn-prompt" data-query="Are you open for full-time opportunities?">Availability</button>
+          </div>
+
+          <!-- Terminal Input Box -->
+          <form class="terminal-input-bar" id="chat-form">
+            <span class="prompt-symbol">&gt;</span>
+            <input type="text" id="chat-input" class="chat-input" placeholder="Transmit a message..." autocomplete="off" aria-label="Type your message">
+            <button type="submit" class="btn-pixel btn-send" aria-label="Send message">SEND</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- SECTION 8: CONTACT                                      -->
+    <!-- ======================================================= -->
+    <section id="contact" class="section contact-section" aria-labelledby="contact-title">
+      <div class="container contact-container">
+        <header class="section-header">
+          <span class="section-eyebrow">08. Communication</span>
+          <h2 id="contact-title" class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Whether you have a project idea, an engineering role open, or just want to connect — I'd love to hear from you.</p>
+        </header>
+
+        <div class="contact-grid">
+
+          <!-- Direct Contact Cards -->
+          <div class="contact-cards">
+            <a href="mailto:namanashankar@example.com" class="contact-card" aria-label="Send email to Namana Shankar">
+              <span class="contact-card-icon" aria-hidden="true">&#9993;</span>
+              <span class="contact-card-label">Email Me</span>
+              <span class="contact-card-val">namanashankar@example.com</span>
+            </a>
+            <a href="https://github.com/Namana-code" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="View GitHub profile">
+              <span class="contact-card-icon" aria-hidden="true">&#128187;</span>
+              <span class="contact-card-label">GitHub</span>
+              <span class="contact-card-val">github.com/Namana-code</span>
+            </a>
+            <a href="https://www.linkedin.com/in/namana-shankar-525081388" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="View LinkedIn profile">
+              <span class="contact-card-icon" aria-hidden="true">&#128188;</span>
+              <span class="contact-card-label">LinkedIn</span>
+              <span class="contact-card-val">namana-shankar</span>
+            </a>
+          </div>
+
+          <!-- Contact Form -->
+          <!--
+            CONTACT FORM NOTE:
+            This form uses action="#" and is handled via JS.
+            To make it actually send emails, integrate a service like:
+              - Formspree (https://formspree.io) — replace action with your Formspree endpoint
+              - EmailJS (https://emailjs.com) — call their SDK in the submit handler
+              - A backend API endpoint on your server
+          -->
+          <form class="contact-form pixel-terminal-form" id="contact-form" action="#" method="POST" novalidate aria-label="Contact form">
+            <div class="contact-form-titlebar" aria-hidden="true">
+              <span class="cf-titlebar-dots"><span></span><span></span><span></span></span>
+              <span class="cf-titlebar-label">&#9654; SEND_MESSAGE.FORM</span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="cf-name">&#9670; Your Name</label>
+              <input type="text" id="cf-name" name="name" class="form-input" placeholder="Namana Shankar" required autocomplete="name" aria-required="true">
+              <span class="form-err" id="cf-name-err" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="cf-email">&#9670; Email Address</label>
+              <input type="email" id="cf-email" name="email" class="form-input" placeholder="you@example.com" required autocomplete="email" aria-required="true">
+              <span class="form-err" id="cf-email-err" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="cf-subject">&#9670; Subject</label>
+              <input type="text" id="cf-subject" name="subject" class="form-input" placeholder="Project Collaboration / Opportunity" required aria-required="true">
+              <span class="form-err" id="cf-subject-err" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="cf-message">&#9670; Message</label>
+              <textarea id="cf-message" name="message" class="form-input form-textarea" placeholder="Tell me about your project or opportunity..." rows="5" required aria-required="true"></textarea>
+              <span class="form-err" id="cf-message-err" aria-live="polite"></span>
+            </div>
+
+            <button type="submit" class="btn-pixel btn-pixel-primary form-submit-btn" id="cf-submit-btn">
+              &#9654; TRANSMIT MESSAGE
+            </button>
+
+            <!-- Success / error feedback message shown after submit -->
+            <div class="form-status" id="cf-status" role="status" aria-live="polite"></div>
+          </form>
+
+        </div><!-- /.contact-grid -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================= -->
+  <!-- FOOTER                                                    -->
+  <!-- ========================================================= -->
+  <footer class="site-footer" id="footer">
+    <div class="container footer-container">
+      
+      <!-- Social links with pixel art styling and hover effects -->
+      <div class="footer-socials">
+        <a href="https://github.com/Namana-code" target="_blank" rel="noopener noreferrer" class="social-link pixel-social-btn" aria-label="GitHub Profile">
+          <span class="social-icon" aria-hidden="true">&#128187;</span>
+          <span class="social-text">GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/namana-shankar-525081388?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="social-link pixel-social-btn" aria-label="LinkedIn Profile">
+          <span class="social-icon" aria-hidden="true">&#128188;</span>
+          <span class="social-text">LinkedIn</span>
+        </a>
+      </div>
+
+      <!-- Copyright & build note -->
+      <p class="footer-copy">
+        &copy; <span id="current-year">2026</span> Namana Shankar. Built with semantic HTML &amp; modern CSS.
+      </p>
+
+      <!-- Back to top link with hover animation -->
+      <a href="#hero" class="back-to-top" aria-label="Back to top of page">
+        <span class="btt-icon" aria-hidden="true">&#9650;</span> Back to top
+      </a>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
